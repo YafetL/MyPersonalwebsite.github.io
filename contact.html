@@ -7,19 +7,19 @@
     <title>Contact</title>
 </head>
 <body>
-<table cellspacing="20">
+<table cellspacing = "10">
     <!--  border=1 frame=void rules=rows -->
     <tr>
         <td><img src="./asset/image/yafet.png" alt="Profile image"></td>
         <td><img src="./asset/image/lul.png" alt="Profile image"></td> 
-        <td height = "50">&nbsp;&nbsp;&nbsp;&nbsp;
+        <td height = "50">&nbsp;&nbsp;&nbsp;&nbsp;<strong>
             <a href="index.html">Home</a> &nbsp;&nbsp;|&nbsp;&nbsp;
             <a href="Blog.html" target="blanck">Blog</a> &nbsp;&nbsp;|&nbsp;&nbsp;
-            <a href="notes.html" target="blanck">Notes</a> &nbsp;&nbsp;|&nbsp;&nbsp;
+            <a href="movies.html" target="blanck">Movies</a> &nbsp;&nbsp;|&nbsp;&nbsp;
             <a href="brain.html" target="blanck">Brain</a> &nbsp;&nbsp;|&nbsp;&nbsp;
             <a href="MustSee.html" target="blanck">MustSee</a> &nbsp;&nbsp;|&nbsp;&nbsp;
             <a href="support.html" target="blanck">Support</a> &nbsp;&nbsp;|&nbsp;&nbsp;
-            <a href="contact.html" target="blanck">Contact</a> 
+            <a href="contact.html" target="blanck">Contact</a> </strong>
             <br><hr>
             <table cellspacing="10">
                 <tr>
@@ -34,10 +34,9 @@
         <td></td>
     </tr>
     <tr>
-        <td><a href="http:/www.twitter.com"><img src="./asset/image/twitter.jfif" alt="Profile image"></a><br>
-            <a href="http:/www.linkedin.com"><img src="./asset/image/linkedin.jfif" alt="Profile image"></a><br>
-            <a href="http:/www.telegram.com"></a><img src="./asset/image/telegram.jfif" alt="Profile image"><br>
-            <a href="http:/www.gmail.com"><img src="./asset/image/gmail.jfif" alt="Profile image"></a>
+        <td>
+            <a href="http://t.me/Yafet_L"><img src="./asset/image/telegram.jfif"></a><br>
+            <a href="mailto:se.yafet.lulseged@gmail.com"><img src="./asset/image/gmail.jfif"></a>
         </td>
         <td></td>
         <td>
@@ -57,21 +56,37 @@
                   <span class="validity"></span>
               </tr>
               <tr>
-                   <td><label for="passW">Password:</label></td>
-                   <td><input type="text" name="passW" id="passW" required size="25"
-                       pattern="[A-Z][a-z]{4,8}" title="4 to 8 non-symbol"></td>
-                   <span class="validity"></span>
-               </tr>
-              <tr>
                    <td><label for="eMail">Email:</label> </td>
-                   <td><input type="email" name="eMail" id="eMail"></td>
+                   <td><input type="email" name="eMail" id="eMail" required size="25" title="Valid email"></td>
               </tr>
-              <tr>
+               <tr>
+                  <td><label for="phone">Phone:</label></td> 
+                  <td><input type="text" name="phone" id="phone" required size="25"
+                       pattern="[0-9]{0,10}" title="numbers only"></td> 
+                       <span class="validity"></span>
+                </tr>
+                <tr>
+                    <td><label for="gender">What do you like:</label></td> 
+                    <td>Books<input type="checkbox" name="book" value="b"/>
+                        Movies<input type="checkbox" name="movie" value="m"/>
+                        Food<input type="checkbox" name="food" value="fd"/></td> 
+                        <span class="validity"></span>
+                    </tr>
+                <tr>
+                <td><label for="gender">Gender:</label></td> 
+                <td>male <input type="radio" name="g" value="m" id="male" required size="25"/>
+                    female <input type="radio" name="g" value="m" id="male" required size="25"/></td> 
+                     <span class="validity"></span>
+                </tr>
+                <tr>
                    <td>Where are you from:</td>
                    <td>
                        <select name="country" id="">
                            <option value="af">Africa</option>
                            <option value="as">Asia</option>
+                           <option value="na">North America</option>
+                           <option value="sa">South America</option>
+                           <option value="aus">Australia</option>
                            <option value="eu">Europe</option>
                         </select>
                    </td>
