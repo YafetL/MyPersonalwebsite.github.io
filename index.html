@@ -1,48 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" href="./asset/image/MyIcon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Website</title>
+    <link rel="stylesheet" href="./asset/css/bootstrap.min.css">
+    <title>Document</title>
 </head>
 <body>
-<table>
-    <!--  border=1 frame=void rules=rows -->
-    <tr>
-        <td></td><td></td>
-        <td height = "50">&nbsp;&nbsp;&nbsp;&nbsp; <strong>
-            <a href="index.html">Home</a> &nbsp;&nbsp;|&nbsp;&nbsp;
-            <a href="Blog.html" target="blanck">Blog</a> &nbsp;&nbsp;|&nbsp;&nbsp;
-            <a href="movies.html" target="blanck">Movies</a> &nbsp;&nbsp;|&nbsp;&nbsp;
-            <a href="brain.html" target="blanck">Brain</a> &nbsp;&nbsp;|&nbsp;&nbsp;
-            <a href="MustSee.html" target="blanck">MustSee</a> &nbsp;&nbsp;|&nbsp;&nbsp;
-            <a href="support.html" target="blanck">Support</a> &nbsp;&nbsp;|&nbsp;&nbsp;
-            <a href="contact.html" target="blanck">Contact</a> 
-            <br><hr>
-        </strong></td>
-        <td></td><td></td><td></td>
-    </tr>
-    <tr><td><img src="./asset/image/yafet.png" alt="Profile image"></td>
-        <td><img src="./asset/image/lul.png" alt="Profile image"></td>
-        <td><h1>Hi, I'm Yafet</h1>
-            <big>I'm a software engineering student in Addis Ababa Institute 
-                of Technology, ITSC department.<br><br>
-                
-                This site describes everything to know about me and hosts 
-                some interesting writing on issues I read about and most admire me.
-            </big><br><br>
-        </td>
-        <td></td>
-        <td><img src="./asset/image/download.png" alt="Profile image"></td>
-        <td><img src="./asset/image/left.png" alt="Profile image"></td>
-        <td><img src="./asset/image/right.png" alt="Profile image"></td> 
-    </tr>
-</table>
-<table>
-    <tr><td><img src="./asset/image/left.png" alt="Profile image"></td>
-        <td><img src="./asset/image/right.png" alt="Profile image"></td>
-        <td><big>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-sm-6 col-6"></div>
+            <div class="col-md-8 col-sm-12 col-12"  style="border-bottom: solid 1px; margin-bottom: 10px;">
+                <header>
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                        </button>
+                      
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                          <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active"><a class="nav-link" href="index.html">Home<span class="sr-only">(current)</span></a></li>
+                            <li class="nav-item active"><a class="nav-link" href="Blog.html">blog<span class="sr-only">(current)</span></a></li>
+                            <li class="nav-item active"><a class="nav-link" href="movies.html">movies <span class="sr-only">(current)</span></a></li>
+                            <li class="nav-item active"><a class="nav-link" href="brain.html">brain<span class="sr-only">(current)</span></a></li>
+                            <li class="nav-item active"><a class="nav-link" href="MustSee.html">mustsee<span class="sr-only">(current)</span></a></li>
+                            <li class="nav-item active"><a class="nav-link" href="support.html">support<span class="sr-only">(current)</span></a></li>
+                            <li class="nav-item active"><a class="nav-link" href="contact.html">contact<span class="sr-only">(current)</span></a></li>
+                        <!-- <li class="nav-item"><a class="nav-link" href="support.html.html">Link</a></li>
+                            <li class="nav-item"><a class="nav-link disabled" href="contact.html" tabindex="-1" aria-disabled="true">Disabled</a></li> -->
+                          </ul>
+                        </div>
+                      </nav>
+                </header>
+            </div>
+            <div class="col-md-2 col-sm-6 col-6"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-sm-6 col-6"></div>
+            <div class="col-md-8 col-sm-12 col-12">
+                <div class="row">
+                    <div class="col-md-8 col-sm-8 col-5"><h1>Hi, I'm Yafet</h1>
+                        <big>I'm a software engineering student in Addis Ababa Institute 
+                            of Technology, ITSC department.<br><br>
+                            
+                            This site describes everything to know about me and hosts 
+                            some interesting writing on issues I read about and most admire me.
+                        </big><br><br></div>
+                    <div class="col-md-4 col-sm-4 col-7"><img src="./asset/image/download.png" alt=""></div>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-6 col-6"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 col-sm-6 col-6"></div>
+            <div class="col-md-8 col-sm-12 col-12">
+                <big>
                 I've also taken Harvard University <a href="https://www.edx.org/course/cs50s-introduction-to-computer-science" target="blanck">cs50</a> 
                 course and google android
                 programming free tutorials and I have found them very useful. I encourage
@@ -56,22 +72,18 @@
                 My Special Quote:<br>
                 "Your biggest weakness is your strength."<br></big>
                 <form action="mailto:se.yafet.lulseged@gmail.com" method="POST">
-                    <table>
-                        <tr> 
-                            <td> Your best email...<br>
-                                <input type="email" name="email" id="email" size="30" height="150" required size="25"
-                                 title="Please fill the box correctly"></td> 
-                                 <span class="validity"></span>
-                            <td><br><input type="submit" value="submit"></td><br>
-                         </tr>
-                    </table><br>
+                     Your best email...<br>
+                        <input type="email" name="email" id="email" size="30" height="150" required size="25"
+                         title="Please fill the box correctly"> 
+                         <span class="validity"></span>
+                    <input type="submit" value="submit"><br>
                 </form><big>Enjoy,<br>Yafet</big> <br>
                 <a href="http://t.me/Yafet_L"><img src="./asset/image/blackTg.jfif"></a>
                 <a href="mailto:se.yafet.lulseged@gmail.com"><img src="./asset/image/blachGm.png"></a><br>
-                <hr><table cellpadding = "30"><tr><td></td><td> © Yafet Lulseged, 2020 | You're looking great today.</td><td></td></tr></table></td>
-            <td><img src="./asset/image/left.png" alt="Profile image"></td>
-            <td><img src="./asset/image/right.png" alt="Profile image"></td>
-    </tr>
-</table>
+                <hr><table cellpadding = "30"> © Yafet Lulseged, 2020 | You're looking great today.
+            </div>
+            <div class="col-md-2 col-sm-6 col-6"></div>
+        </div>
+    </div>
 </body>
 </html>
