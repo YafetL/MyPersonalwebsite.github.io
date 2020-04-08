@@ -1,0 +1,238 @@
+@media only screen and (max-width: 720px) {
+    #please
+    {
+        width: 100%;
+        overflow-y: auto;
+    } 
+}
+
+#please{
+    overflow-y: hidden !important;
+    overflow-x: hidden !important;
+    padding-bottom: 50px;
+}
+
+
+body > div{
+    width: 720px;
+}
+
+#content{
+    padding-top: 70px;
+    font-weight: 500;
+    font-family: Arial,sans-serif;
+    font-size: 20px;
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+    text-decoration: none;
+}
+
+/* Style all font awesome icons */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+/* Twitter */
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-get-pocket {
+    background: rgb(223, 14, 14);
+    color: white;
+}
+
+.fa-envelope {
+    background: rgb(165, 164, 164);
+    color: white;
+}
+.myicons{
+    position: fixed;
+    visibility: hidden;
+    top: 170px;
+    padding: 0;
+    margin: 0;
+    animation: mymove 5s;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+
+#share{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0;
+    font-size: 17px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px; 
+    background-color: white;
+}
+  
+@keyframes mymove {
+    from {left: -100px;}
+    to {left: 0px;}
+    100% {
+        visibility: visible;
+    }
+}
+/* Movies and blog */
+.myDiv:target{ 
+    display:block !important; 
+}
+
+.myDiv:target ~ div#trb{
+    display:none;
+}
+
+
+#First{
+    text-decoration: none;
+    background-color: rgb(227, 233, 233);
+    border-radius: 5px;
+    font-size: 10px;
+    float: left;
+}
+
+div > h1 ~ a{
+    text-decoration: none;
+    background-color: rgb(227, 233, 233);
+    border-radius: 5px;
+    font-size: 17px;
+    color: rgb(61, 236, 236);
+}
+
+div > h1 ~ a:hover{
+    text-decoration: none;
+    color: rgb(61, 236, 236);
+    opacity: 0.7;
+}
+
+#try{
+    border-bottom: 1px solid rgb(226, 224, 224);
+    border-top: 1px solid rgb(226, 224, 224);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#try > a{
+    text-decoration: none;
+    color: rgb(24, 22, 22);
+}
+
+#try:hover{
+    opacity: 0.5;
+}
+
+#mTry{
+    padding-top: 10px;
+    padding-bottom: 10px;  
+}
+
+a > h2:hover{
+    color: rgb(64, 190, 228);
+}
+#Nav{
+    position: fixed;
+    background-color: white;
+    width: 720px;
+    margin-bottom: 30px;
+}
+
+#navbarCollapse{
+    text-align: center;
+}
+
+@media only screen and (min-width: 763px) {
+    #Nav{
+        position: fixed;
+        border-bottom: 1px solid rgb(226, 224, 224);
+        margin-bottom: 30px;
+    }
+}
+
+@media only screen and (max-width: 764px) {
+    #Nav{
+        position: fixed;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    #navbarCollapse > div > a{
+        border-bottom: 1px solid rgb(226, 224, 224);
+    }
+    #navbarCollapse > div > #home{
+        border-top: 1px solid rgb(226, 224, 224);
+    }
+}
+
+
+#home{
+    padding-right: 10px;
+    color: rgb(61, 236, 236);
+}
+#home ~ a{
+    padding-right: 10px;
+    color: rgb(61, 236, 236);
+}
+#home:hover{
+    opacity: 0.4;
+}
+#home ~ a:hover{
+    opacity: 0.4;
+}
+
+button{
+    color: black;
+}
+
+#movie{
+    color: rgb(61, 236, 236);
+    text-decoration: none;
+}
+
+#movie:hover{
+    opacity: 0.5;
+    text-decoration: none;
+}
+
+#movieHeader{
+    margin-top: 40px;
+}
+
+#Icons{
+    width: 137px;
+}
+
+.Form{
+    background-color: rgb(61, 236, 236);
+    padding: 30px;
+}
+
+#FormHeader{
+    font-family: 'Pacifico';
+    font-size: 50px;
+    text-align: center;
+}
