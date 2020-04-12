@@ -1,6 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./asset/image/MyIcon.ico">
+    <link rel="stylesheet" href="./asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./asset/css/mbs.css">
+    <link rel="stylesheet" href="./asset/css/trial.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <title>Contact</title>
+</head>
+<body>
+  <div class="mx-auto" id="please">
+    <nav class="navbar container-md navbar-expand-md navbar-light fixed-top" id="Nav">
+      <div class="navbar-brand" id="brand"><img src="./asset/image/yafet.png"></div>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+          <div class="navbar-nav">
+              <a href="index.html" class="nav-item nav-link" id="home">Home</a>
+              <a href="Blog.html" class="nav-item nav-link">Blog</a>
+              <a href="movies.html" class="nav-item nav-link">Movies</a>
+              <a href="brain.html" class="nav-item nav-link">Brain</a>
+              <a href="MustSee.html" class="nav-item nav-link">Mustsee</a>
+              <a href="support.html" class="nav-item nav-link">Support</a>
+              <a href="contact.html" class="nav-item nav-link">Contact</a>
+          </div>
+      </div>
+    </nav>
+    <div id="content">
+        <div class="Form">
+            <h1 id="FormHeader">Get in Touch</h1>
+            <form action="mailto:se.yafet.lulseged@gmail.com" method="POST">
+              <div class="form-row">
+                <div class="col-md-4 mb-3">
+                  <label for="validationDefault01">First name</label>
+                  <input type="text" class="form-control" id="validationDefault01" placeholder="First name" value="" required>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label for="validationDefault02">Last name</label>
+                  <input type="text" class="form-control" id="validationDefault02" placeholder="Last name" value="" required>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <label for="validationDefaultUsername">Username</label>
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                    </div>
+                    <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Username" aria-describedby="inputGroupPrepend2" required>
+                  </div>
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="col-md-6 mb-3">
+                  <label for="validationDefault03">Country</label>
+                  <input type="text" class="form-control" id="validationDefault03" placeholder="Country" required>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="validationDefault04">City</label>
+                  <input type="text" class="form-control" id="validationDefault04" placeholder="City" required>
+                </div>
+                <div class="col-md-3 mb-3">
+                  <label for="validationDefault05">Sub-city</label>
+                  <input type="text" class="form-control" id="validationDefault05" placeholder="Sub-city" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <legend>What do you like?</legend>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                  <label class="form-check-label" for="inlineCheckbox1">Books</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                  <label class="form-check-label" for="inlineCheckbox2">Movies</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                  <label class="form-check-label" for="inlineCheckbox3">Sports</label>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Comment</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <div class="form-group">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                  <label class="form-check-label" for="invalidCheck2">
+                    Agree to terms and conditions
+                  </label>
+                </div>
+              </div>
+              <div id="btnn">
+                <button class="btn btn-primary" type="submit">Submit form</button>
+              </div>
+            </form>
+        </div>
+        <footer class="page-footer font-small blue">
+
+          <!-- Copyright -->
+          <div class="footer-copyright text-center py-3"> 
+            © Yafet Lulseged, 2020 | You're looking great today.
+          </div>
+          <!-- Copyright -->
+        
+        </footer>
+    </div>
+  </div>
+  <div>
+    <div class="myicons">
+      <!-- Add font awesome icons -->
+      <p id="share">shares</p>
+      <a href="#" class="fa fa-facebook"></a><br>
+      <a href="#" class="fa fa-twitter"></a><br>
+      <a href="#" class="fa fa-linkedin"></a><br>
+      <a href="#" class="fa fa-get-pocket"></a><br>
+      <a href="#" class="fa fa-envelope"></a>
+    </div>
+  </div>
+</body>
+</html>
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
     <link rel="icon" href="./asset/image/MyIcon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +137,6 @@
 </head>
 <body>
 <table cellspacing = "10">
-    <!--  border=1 frame=void rules=rows -->
     <tr>
         <td><img src="./asset/image/yafet.png" alt="Profile image"></td>
         <td><img src="./asset/image/lul.png" alt="Profile image"></td> 
@@ -110,3 +238,52 @@
 </table>
 </body>
 </html>
+
+
+<form>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputEmail4">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4">Password</label>
+      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputAddress">Address</label>
+    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+  </div>
+  <div class="form-group">
+    <label for="inputAddress2">Address 2</label>
+    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="inputCity">City</label>
+      <input type="text" class="form-control" id="inputCity">
+    </div>
+    <div class="form-group col-md-4">
+      <label for="inputState">State</label>
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>...</option>
+      </select>
+    </div>
+    <div class="form-group col-md-2">
+      <label for="inputZip">Zip</label>
+      <input type="text" class="form-control" id="inputZip">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" id="gridCheck">
+      <label class="form-check-label" for="gridCheck">
+        Check me out
+      </label>
+    </div>
+  </div>
+  <button type="submit" class="btn btn-primary">Sign in</button>
+</form>
+ -->

@@ -236,3 +236,12 @@ button{
     font-size: 50px;
     text-align: center;
 }
+label, legend{
+    font-family: 'Pacifico';
+    font-size: 22px;
+    /* font-weight: bold; */
+}
+#btnn{
+    font-family: 'Pacifico';
+    text-align: center;
+}
